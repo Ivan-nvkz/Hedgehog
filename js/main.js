@@ -3,6 +3,39 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
+   // Разворачивание списка при клике на пункт меню на мобильных устройствах Жека из ютуба  start ===========
+
+   // document.addEventListener("click", documentActions);
+   // let isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
+   // /* Добавление класса touch для HTML если браузер мобильный */
+   // function addTouchClass() {
+   //    // Добавление класса _touch для HTML если браузер мобильный
+   //    //if (isMobile.any()) document.documentElement.classList.add('touch');
+   // }
+   // // Actions (делегирование события клик)
+   // function documentActions(e) {
+   //    const targetElement = e.target;
+   //    if (window.innerWidth > 768 && isMobile.any()) {
+   //       if (targetElement.classList.contains('menu__arrow')) {
+   //          targetElement.closest('.menu__item').classList.toggle('_hover');
+   //       }
+   //       if (!targetElement.closest('.menu__item') && document.querySelectorAll('.menu__item._hover').length > 0) {
+   //          removeClasses(document.querySelectorAll('.menu__item._hover'), '_hover');
+   //       }
+   //    }
+   // }
+
+   // // Убрать класс из всех элементов массива
+   // function removeClasses(array, className) {
+   //    for (var i = 0; i < array.length; i++) {
+   //       array[i].classList.remove(className);
+   //    }
+   // }
+
+
+   // Разворачивание списка при клике на пункт меню на мобильных устройствах Жека из ютуба  end =============
+
+
    // Popup start ====================================================================================
 
    // Получение хеша в адресе сайта
@@ -355,10 +388,10 @@ document.addEventListener('DOMContentLoaded', () => {
    }
    if (menuBody) {
       menuBody.addEventListener('click', function () {
-         iconMenu.classList.remove("menu-open");
-         menuBody.classList.remove("menu__list--active");
-         menuBody.classList.remove("menu-open");
-         document.body.classList.remove("_lock");
+         // iconMenu.classList.remove("menu-open");
+         // menuBody.classList.remove("menu__list--active");
+         // menuBody.classList.remove("menu-open");
+         // document.body.classList.remove("_lock");
       });
    }
 
